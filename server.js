@@ -22,7 +22,7 @@ function writeDB(db) {
 let db = readDB();
 
 // Admin login
-const ADMIN = { username: 'admin', password: 'admin123' };
+const ADMIN = { username: 'sevenArt_İttifuck', password: 'Sİ_0634001' };
 app.post('/api/admin/login', (req, res) => {
   const { username, password } = req.body;
   if (username === ADMIN.username && password === ADMIN.password) return res.json({ success: true });
@@ -108,3 +108,4 @@ app.delete('/api/admin/clear-tickets', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server ${PORT} portunda çalışıyor`));
+
